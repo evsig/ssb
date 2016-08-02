@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="/static/css/common.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="background"></div>
+	<div class="page-wrap">
+		<header>
+			<a href="/" class="logo"></a>
+		</header>
+
+		{% block PAGE_CONTENT %}{% endblock %}
+		
+		<footer>
+			<ul class="page-wrap">
+				<li class="home active">
+					<a href="/">ГЛАВНАЯ</a>
+				</li>
+				<li class="about">
+					<a href="/about">О НАС</a>
+				</li>
+				<li class="audio">
+					<a href="/audio">АУДИО</a>
+				</li>
+				<li class="video">
+					<a href="/video">ВИДЕО</a>
+				</li>
+				<li class="contact">
+					<a href="/contact">КОНТАКТЫ</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+
+</body>
+</html>
