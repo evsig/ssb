@@ -5,7 +5,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title></title>
 	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<!-- Place favicon.ico in the root directory -->
@@ -15,6 +15,18 @@
 </head>
 <body>
 	<div id="background"></div>
+	<div class="gallery">
+	<div class="gallery-inner">
+		<a class="photo1" href="/static/i/data/q1.JPG"><img src="/static/i/data/m-q1.JPG" alt="Live in QUART"/></a>
+		<a><div class="photo2"></div></a>
+		<a><div class="photo3"></div></a>
+		<a><div class="photo4"></div></a>
+		<div class="photo5"></div>
+		<div class="photo6"></div>
+		<div class="photo7"></div>
+		<div class="photo8"></div>
+	</div>
+	</div>
 	<div class="page-wrap">
 		<header>
 			<a href="/" class="logo"></a>
@@ -23,23 +35,36 @@
 		{% block PAGE_CONTENT %}{% endblock %}
 		
 		<footer>
-			<ul class="page-wrap">
+			<div class="page-wrap">
+			<ul>
 				<li class="home active">
 					<a href="/">ГЛАВНАЯ</a>
 				</li>
 				<li class="about">
-					<a href="/about">О НАС</a>
+					<a href="/about.html">О НАС</a>
 				</li>
 				<li class="audio">
-					<a href="/audio">АУДИО</a>
+					<a href="/audio.html">АУДИО</a>
 				</li>
 				<li class="video">
-					<a href="/video">ВИДЕО</a>
+					<a href="/video.html">ВИДЕО</a>
 				</li>
+				<li class="photo-gallery">
+					<a href="/photo.html">ФОТО</a>
+				</li>
+				<li class="texts">
+					<a href="/texts.html">ТЕКСТ</a>
+				</li>
+				<li class="events">
+					<a href="/events.html">СОБЫТИЯ</a>
+				</li>				
 				<li class="contact">
-					<a href="/contact">КОНТАКТЫ</a>
+					<a href="/contact.html">КОНТАКТЫ</a>
 				</li>
 			</ul>
+			<span class="copyright">Copyright of DronMcDruseek&copy;</span>
+			</div> 
+			
 		</footer>
 	</div>
 

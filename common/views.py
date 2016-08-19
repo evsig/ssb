@@ -13,6 +13,7 @@ class StaticPageView(TemplateView):
         """Определяет имя шаблона и вызывает стандартный dispatch.
         """
         name = kwargs.get('template_name', '').strip()
+        print kwargs
         self.template_name = name
         try:
             response = super(StaticPageView, self).dispatch(request, *args,

@@ -21,7 +21,9 @@ from django.conf.urls.static import static
 from common.views import StaticPageView
 
 urlpatterns = [
+    
     url(r'^admin/', admin.site.urls),
+    url(r'^$', StaticPageView.as_view(), kwargs={ 'template_name' : 'index.html' }),
     url(r'^(?P<template_name>.*)', StaticPageView.as_view(), name='page'),
 ]
 

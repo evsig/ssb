@@ -1,0 +1,246 @@
+@import "compass";
+@import "utils/normalize";
+@import "utils/layout";
+/* не изменять */
+
+
+.basic-text .caption {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.basic-text .hunter {
+  display: block;
+  float:left;
+  text-align:left;
+}
+
+.basic-text .lumier-bros {
+  display: block;
+  float:right;
+  text-align:left;
+  margin:0 0 20px 20px;
+  border-radius:5px;
+}
+
+input {
+  display: block;
+  height: 40px;
+  width: 50%;
+  border: 2px solid #bbf;
+  border-radius: 5px;
+  margin:15px;
+  font-weight: 400;
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+.textarea-wrapper{
+  margin:15px;
+}
+
+textarea.message {
+  box-sizing: border-box;
+  display: block;
+  border: 2px solid #bbf;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 24px;
+  padding:15px 10px;
+  line-height: 15px;
+  height: 150px;
+  width: 100%;
+  vertical-align:top;
+}
+
+input.send {
+  margin-bottom:30px;
+  background: linear-gradient(to top, #49a, #acd);
+  color:#333;
+}
+
+.gallery {
+  display:block;
+  float:left;
+  position:fixed;
+  left:50%;
+  top:0;
+  height:100%;
+  width:210px;
+  background:rgba(#fff,.8);
+  margin-left:260px;
+  z-index: 4;
+  text-align: center;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.gallery-inner {
+  overflow-y: auto;
+  height: 100%;
+  margin-right:-30px;
+
+}
+
+.photo1 {
+  display: block;
+  position:relative;
+  margin: 15px;
+  width: 180px;
+  height:120px;
+  background-color: black; 
+  z-index: 6;
+  border-radius: 5px;
+  overflow:hidden;
+  cursor:pointer;
+
+
+}
+
+.photo2 {
+  display: block;
+  position:relative;
+  margin: 15px;
+  width: 180px;
+  height:120px;
+  background-color: black; 
+  z-index: 6;
+  border-radius: 5px;
+}
+
+.photo3 {
+  display: block;
+  position:relative;
+  margin: 15px;
+  width: 180px;
+  height:120px;
+  background-color: black; 
+  z-index: 6;
+  border-radius: 5px;
+}
+
+.photo4 {
+  display: block;
+  position:relative;
+  margin: 15px;
+  width: 180px;
+  height:120px;
+  background-color: black; 
+  z-index: 6;
+  border-radius: 5px;
+}
+
+.photo5 {
+  display: block;
+  position:relative;
+  margin: 15px;
+  width: 180px;
+  height:120px;
+  background-color: black; 
+  z-index: 6;
+  border-radius: 5px;
+}
+
+.photo6 {
+  display: block;
+  position:relative;
+  margin: 15px;
+  width: 180px;
+  height:120px;
+  background-color: black; 
+  z-index: 6;
+  border-radius: 5px;
+}
+
+.audio-inner {
+  display: block;
+  position:relative;
+  margin: 15px;
+  width: auto;
+  height:auto;
+  background-color: black; 
+  z-index: 6;
+  border-radius: 5px;
+  padding:5px;
+  padding-bottom: 1px;
+
+}
+
+.video-inner {
+  display: inline-block;
+  position:relative;
+  margin: 5px;
+  width: 30%;
+  height:150px;
+  background-color: black; 
+  z-index: 6;
+  border-radius: 5px;
+  padding:5px;
+  overflow:hidden;
+  float:left;
+
+}
+
+.event-inner {
+  display: inline-block;
+  position:relative;
+  margin: 5px;
+  width: 30%;
+  height:200px;
+  background-color: #000; 
+  z-index: 6;
+  border-radius: 5px;
+  padding:5px;
+  overflow: hidden;
+  float:left;  
+  vertical-align: middle;
+  line-height: 200px;
+}
+
+.event-inner img{
+  width: 100%;
+  height: auto;
+}
+
+.separator-content {
+  
+  border-bottom: 2px solid #000;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+@media (max-width: 1024px) {
+  .page-wrap{
+    width:auto;
+    margin:0 10px;
+  }
+  .gallery {
+    left:auto;
+    right:10px;
+  }
+  .basic-text {
+    margin-top: 10px;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 970px) {
+
+  }
+
+
+@include keyframes(some){
+	0%{
+		@include transform(translate(0,0));
+		opacity: 1;
+	}
+	100%{
+		@include transform(translate(0,10px));
+		opacity: 0;
+	}
+}

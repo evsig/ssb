@@ -1,0 +1,13 @@
+{% extends "layout/base.html" %}
+
+{% block PAGE_CONTENT %}
+<div class="basic-text">
+	<input class="name" type="text" placeholder="Введите имя"/>
+	<input class="lastname" type="text" placeholder="Введите фамилию"/>
+	<input class="e-mail" type="text" placeholder="Введите e-mail"/>
+	<div class="textarea-wrapper">
+		<textarea class="message" placeholder="Ваше сообщение"/></textarea>
+	</div>
+	<input class="send" type="submit"/>
+</div>
+{% endblock %}
