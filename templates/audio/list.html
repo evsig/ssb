@@ -1,0 +1,12 @@
+{% extends "layout/base.html" %}
+
+{% block PAGE_CONTENT %}
+<div class="basic-text">
+	<h1 class="caption">НАШЕ МУЗЛО</h1>
+	{% for object in object_list %}
+		<div class="audio-inner">
+			{{object.iframe_data|safe}}
+		</div>
+	{%endfor%}
+</div>
+{% endblock %}

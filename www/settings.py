@@ -23,6 +23,7 @@ SECRET_KEY = 'ceel#g@#b$@z)bza0*o(g^-30fg_c)f=ouczm+k=03+kitg^q-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = []
 
@@ -36,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'sorl.thumbnail',
 
     'common'
 ]

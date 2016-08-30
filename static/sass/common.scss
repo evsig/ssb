@@ -156,7 +156,7 @@ input.send {
 .audio-inner {
   display: block;
   position:relative;
-  margin: 15px;
+  margin: 5px;
   width: auto;
   height:auto;
   background-color: black; 
@@ -179,9 +179,21 @@ input.send {
   padding:5px;
   overflow:hidden;
   float:left;
-
 }
 
+.photo-inner {
+  display: inline-block;
+  position:relative;
+  margin: 5px;
+  width: 22%;
+  height:100px;
+  background-color: black; 
+  z-index: 6;
+  border-radius: 5px;
+  padding:5px;
+  overflow:hidden;
+  float:left;  
+}
 .event-inner {
   display: inline-block;
   position:relative;
@@ -204,8 +216,9 @@ input.send {
 }
 
 .separator-content {
-  
+  clear:both;
   border-bottom: 2px solid #000;
+  font-weight: bold;
 }
 
 iframe {

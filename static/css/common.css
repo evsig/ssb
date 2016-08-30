@@ -766,7 +766,7 @@ input.send {
 .audio-inner {
   display: block;
   position: relative;
-  margin: 15px;
+  margin: 5px;
   width: auto;
   height: auto;
   background-color: black;
@@ -791,7 +791,22 @@ input.send {
   float: left;
 }
 
-/* line 185, ../sass/common.scss */
+/* line 184, ../sass/common.scss */
+.photo-inner {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  width: 22%;
+  height: 100px;
+  background-color: black;
+  z-index: 6;
+  border-radius: 5px;
+  padding: 5px;
+  overflow: hidden;
+  float: left;
+}
+
+/* line 197, ../sass/common.scss */
 .event-inner {
   display: inline-block;
   position: relative;
@@ -808,18 +823,20 @@ input.send {
   line-height: 200px;
 }
 
-/* line 201, ../sass/common.scss */
+/* line 213, ../sass/common.scss */
 .event-inner img {
   width: 100%;
   height: auto;
 }
 
-/* line 206, ../sass/common.scss */
+/* line 218, ../sass/common.scss */
 .separator-content {
+  clear: both;
   border-bottom: 2px solid #000;
+  font-weight: bold;
 }
 
-/* line 211, ../sass/common.scss */
+/* line 224, ../sass/common.scss */
 iframe {
   width: 100%;
   height: 100%;
@@ -827,19 +844,19 @@ iframe {
 }
 
 @media (max-width: 1024px) {
-  /* line 217, ../sass/common.scss */
+  /* line 230, ../sass/common.scss */
   .page-wrap {
     width: auto;
     margin: 0 10px;
   }
 
-  /* line 221, ../sass/common.scss */
+  /* line 234, ../sass/common.scss */
   .gallery {
     left: auto;
     right: 10px;
   }
 
-  /* line 225, ../sass/common.scss */
+  /* line 238, ../sass/common.scss */
   .basic-text {
     margin-top: 10px;
     height: auto;

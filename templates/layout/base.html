@@ -1,3 +1,4 @@
+{% load gallery %}{% get_random_gallery %}
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -17,6 +18,8 @@
 	<div id="background"></div>
 	<div class="gallery">
 	<div class="gallery-inner">
+	
+	{{random_images}}
 		<a class="photo1" href="/static/i/data/q1.JPG"><img src="/static/i/data/m-q1.JPG" alt="Live in QUART"/></a>
 		<a><div class="photo2"></div></a>
 		<a><div class="photo3"></div></a>
@@ -44,19 +47,19 @@
 					<a href="/about.html">О НАС</a>
 				</li>
 				<li class="audio">
-					<a href="/audio.html">АУДИО</a>
+					<a href="/audio/">АУДИО</a>
 				</li>
 				<li class="video">
-					<a href="/video.html">ВИДЕО</a>
+					<a href="/video/">ВИДЕО</a>
 				</li>
 				<li class="photo-gallery">
-					<a href="/photo.html">ФОТО</a>
+					<a href="/gallery/">ФОТО</a>
 				</li>
 				<li class="texts">
-					<a href="/texts.html">ТЕКСТ</a>
+					<a href="/articles/">ТЕКСТ</a>
 				</li>
 				<li class="events">
-					<a href="/events.html">СОБЫТИЯ</a>
+					<a href="/events/">СОБЫТИЯ</a>
 				</li>				
 				<li class="contact">
 					<a href="/contact.html">КОНТАКТЫ</a>

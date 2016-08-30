@@ -1,0 +1,15 @@
+{% load thumbnail %}
+
+{% for object in object_list %}
+	{{ object.title }}
+	{{object.description}}
+	{{ object.images.all }}
+	{% for image in object.images.all %}
+		{{image.file}}
+		{% thumbnail image.file "200x100" as im %}
+		    <img src="{{ im.url }}">
+	    {% empty %}
+		{% endthumbnail %}
+	{% endfor %}
+	
+{% endfor %}
