@@ -92,3 +92,5 @@ static/sources
 static/.sass-cache
 
 db.sqlite3
+media/
+staticbuild/
