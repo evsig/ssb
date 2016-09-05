@@ -1,4 +1,4 @@
-{% load gallery %}{% get_random_gallery %}
+{% load gallery %}{% get_random_gallery %}{% load thumbnail %}
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -18,16 +18,12 @@
 	<div id="background"></div>
 	<div class="gallery">
 	<div class="gallery-inner">
-	
-	{{random_images}}
-		<a class="photo1" href="/static/i/data/q1.JPG"><img src="/static/i/data/m-q1.JPG" alt="Live in QUART"/></a>
-		<a class="photo1" href="/static/i/data/q1.JPG"><img src="/static/i/data/m-q1.JPG" alt="Live in QUART"/></a>
-		<a class="photo1" href="/static/i/data/q1.JPG"><img src="/static/i/data/m-q1.JPG" alt="Live in QUART"/></a>
-		<a class="photo1" href="/static/i/data/q1.JPG"><img src="/static/i/data/m-q1.JPG" alt="Live in QUART"/></a>
-		<a class="photo1" href="/static/i/data/q1.JPG"><img src="/static/i/data/m-q1.JPG" alt="Live in QUART"/></a>
-		<a class="photo1" href="/static/i/data/q1.JPG"><img src="/static/i/data/m-q1.JPG" alt="Live in QUART"/></a>
-		<a class="photo1" href="/static/i/data/q1.JPG"><img src="/static/i/data/m-q1.JPG" alt="Live in QUART"/></a>
-		<a class="photo1" href="/static/i/data/q1.JPG"><img src="/static/i/data/m-q1.JPG" alt="Live in QUART"/></a>
+	{% for image in random_images %}
+		{% thumbnail image.file "175x120" crop="center" as rand_im %}
+			<a class="photo" href="{{image.file.url}}"><img src="{{rand_im.url}}" alt="{{image.title}}" title="{{image.title}}"/></a>
+			{% empty %}
+		{% endthumbnail %}
+	{% endfor %}
 	</div>
 	</div>
 	<div class="page-wrap">

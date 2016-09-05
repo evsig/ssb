@@ -688,81 +688,22 @@ input.send {
   margin-right: -30px;
 }
 
-/* line 86, ../sass/common.scss */
-.photo1 {
+/* line 85, ../sass/common.scss */
+.gallery .photo {
   display: block;
   position: relative;
   margin: 15px;
-  width: 180px;
+  width: 175px;
   height: 120px;
   background-color: black;
   z-index: 6;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
+  padding: 3px;
 }
 
-/* line 101, ../sass/common.scss */
-.photo2 {
-  display: block;
-  position: relative;
-  margin: 15px;
-  width: 180px;
-  height: 120px;
-  background-color: black;
-  z-index: 6;
-  border-radius: 5px;
-}
-
-/* line 112, ../sass/common.scss */
-.photo3 {
-  display: block;
-  position: relative;
-  margin: 15px;
-  width: 180px;
-  height: 120px;
-  background-color: black;
-  z-index: 6;
-  border-radius: 5px;
-}
-
-/* line 123, ../sass/common.scss */
-.photo4 {
-  display: block;
-  position: relative;
-  margin: 15px;
-  width: 180px;
-  height: 120px;
-  background-color: black;
-  z-index: 6;
-  border-radius: 5px;
-}
-
-/* line 134, ../sass/common.scss */
-.photo5 {
-  display: block;
-  position: relative;
-  margin: 15px;
-  width: 180px;
-  height: 120px;
-  background-color: black;
-  z-index: 6;
-  border-radius: 5px;
-}
-
-/* line 145, ../sass/common.scss */
-.photo6 {
-  display: block;
-  position: relative;
-  margin: 15px;
-  width: 180px;
-  height: 120px;
-  background-color: black;
-  z-index: 6;
-  border-radius: 5px;
-}
-
-/* line 156, ../sass/common.scss */
+/* line 102, ../sass/common.scss */
 .audio-inner {
   display: block;
   position: relative;
@@ -776,7 +717,7 @@ input.send {
   padding-bottom: 1px;
 }
 
-/* line 170, ../sass/common.scss */
+/* line 116, ../sass/common.scss */
 .video-inner {
   display: inline-block;
   position: relative;
@@ -791,22 +732,22 @@ input.send {
   float: left;
 }
 
-/* line 184, ../sass/common.scss */
+/* line 130, ../sass/common.scss */
 .photo-inner {
   display: inline-block;
   position: relative;
   margin: 5px;
-  width: 22%;
+  width: 156px;
   height: 100px;
   background-color: black;
   z-index: 6;
   border-radius: 5px;
-  padding: 5px;
+  padding: 3px;
   overflow: hidden;
   float: left;
 }
 
-/* line 197, ../sass/common.scss */
+/* line 143, ../sass/common.scss */
 .event-inner {
   display: inline-block;
   position: relative;
@@ -823,20 +764,20 @@ input.send {
   line-height: 200px;
 }
 
-/* line 213, ../sass/common.scss */
+/* line 159, ../sass/common.scss */
 .event-inner img {
   width: 100%;
   height: auto;
 }
 
-/* line 218, ../sass/common.scss */
+/* line 164, ../sass/common.scss */
 .separator-content {
   clear: both;
   border-bottom: 2px solid #000;
   font-weight: bold;
 }
 
-/* line 224, ../sass/common.scss */
+/* line 170, ../sass/common.scss */
 iframe {
   width: 100%;
   height: 100%;
@@ -844,19 +785,19 @@ iframe {
 }
 
 @media (max-width: 1024px) {
-  /* line 230, ../sass/common.scss */
+  /* line 176, ../sass/common.scss */
   .page-wrap {
     width: auto;
     margin: 0 10px;
   }
 
-  /* line 234, ../sass/common.scss */
+  /* line 180, ../sass/common.scss */
   .gallery {
     left: auto;
     right: 10px;
   }
 
-  /* line 238, ../sass/common.scss */
+  /* line 184, ../sass/common.scss */
   .basic-text {
     margin-top: 10px;
     height: auto;

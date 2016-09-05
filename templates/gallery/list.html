@@ -5,15 +5,15 @@
 	<h1 class="caption">ФОТО</h1>
 	{% for object in object_list %}
 	{% for image in object.images.all %}
-		{% thumbnail image.file "200x100" as im %}
+		{% thumbnail image.file "156x100" crop="center" as im %}
 		    <div class="photo-inner">
 		    	<img src="{{ im.url }}">
 		    </div>
 	    {% empty %}
 		{% endthumbnail %}
 	{% endfor %}
-	
 {% endfor %}
-{% endblock %}
+
 	</div>
 </div>
+{% endblock %}
